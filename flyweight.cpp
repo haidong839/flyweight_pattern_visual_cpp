@@ -60,8 +60,10 @@ int main(int argc, char** argv)
 {
 
 	FlyweightFactory^ mFlyweightFactory = gcnew FlyweightFactory();
-	for(int ii=0; ii<10; ii++)
+	for(int ii=0; ii<10; ii++){
 		mFlyweightFactory->getShape("Line")->draw();
+		mFlyweightFactory->getShape("Rectangle")->draw();
+	}
 
 	Console::ReadLine();
 	return 0;
